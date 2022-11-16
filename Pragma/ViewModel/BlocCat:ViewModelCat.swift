@@ -7,12 +7,22 @@
 
 import Foundation
 
-class BlocCat {
-    var cat: [Cat] = []
+class BlocCat: CatsService {
+    func getDataCats(data: [Cat]) {
+        catList = data
+    }
+    
+    var catList: [Cat] = []
     
     
     func getCats() -> Int {
-        return cat.count
+        return catList.count
+    }
+    
+    func requestCatData() {
+        let service = ApiCats()
+        
+        service.getCatsFromService()
     }
     
     

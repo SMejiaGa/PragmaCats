@@ -8,16 +8,20 @@
 import Foundation
 import UIKit
 
-class Service {
-    
+protocol CatsService {
+    func getDataCats(data: [Cat])
+}
 
+class ApiCats {
+    let decoder = JSONDecoder()
+    
     func getCatsFromService()  {
         let catsUrl = URL(string: Constants.apiURL)
         let task = URLSession.shared.dataTask(with: catsUrl!) { data, response, error in
-            if let data = data {
-                let catImage = UIImage(data: data)
-            } else if let error = error {
-                let catImage = UIImage()
+            
+            do {
+                let catsData = try decoder.decode([Cat].self, from: data)
+                CatsService.getDataCats(data: catsData)
             }
         }
         task.resume()

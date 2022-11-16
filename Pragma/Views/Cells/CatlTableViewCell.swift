@@ -12,6 +12,7 @@ class CatlTableViewCell: UITableViewCell {
     @IBOutlet weak var breedNameLabel: UILabel!
     @IBOutlet weak var catInteligenceLabel: UILabel!
     @IBOutlet weak var catCountryLabel: UILabel!
+    @IBOutlet weak var catImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
