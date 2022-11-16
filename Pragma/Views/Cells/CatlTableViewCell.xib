@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="194" id="KGk-i7-Jjw" customClass="CatlTableViewCell" customModule="Pragma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YsZ-aA-oxd">
+                        <rect key="frame" x="8" y="8" width="229" height="173"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bL2-AR-qgv">
+                                <rect key="frame" x="8" y="27" width="213" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aw1-Vd-TFX">
+                                <rect key="frame" x="8" y="141" width="213" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzb-0M-xha">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inteligencia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sio-3f-PYc">
+                                        <rect key="frame" x="126" y="-0.5" width="87" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Aw1-Vd-TFX" secondAttribute="bottom" constant="11.5" id="2XO-us-9r3"/>
+                            <constraint firstAttribute="trailing" secondItem="Aw1-Vd-TFX" secondAttribute="trailing" constant="8" id="F4k-eJ-ZtN"/>
+                            <constraint firstItem="Aw1-Vd-TFX" firstAttribute="top" secondItem="bL2-AR-qgv" secondAttribute="bottom" constant="10" id="FzD-w2-kWu"/>
+                            <constraint firstItem="Aw1-Vd-TFX" firstAttribute="centerX" secondItem="YsZ-aA-oxd" secondAttribute="centerX" id="Kjc-8n-eBZ"/>
+                            <constraint firstItem="Aw1-Vd-TFX" firstAttribute="leading" secondItem="YsZ-aA-oxd" secondAttribute="leading" constant="8" id="iZZ-6z-Mfh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Raza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yU-O0-Zz2">
+                        <rect key="frame" x="8" y="8" width="103" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YsZ-aA-oxd" secondAttribute="bottom" constant="8" id="1zL-Kd-7kG"/>
+                    <constraint firstAttribute="trailing" secondItem="YsZ-aA-oxd" secondAttribute="trailing" constant="8" id="9x5-8l-6DP"/>
+                    <constraint firstItem="YsZ-aA-oxd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="F95-jv-DH6"/>
+                    <constraint firstItem="YsZ-aA-oxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GGj-Cw-SjK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="breedNameLabel" destination="8yU-O0-Zz2" id="Vue-jk-glm"/>
+                <outlet property="catCountryLabel" destination="Jzb-0M-xha" id="bJY-lb-qXW"/>
+                <outlet property="catInteligenceLabel" destination="Sio-3f-PYc" id="81I-Rt-SDh"/>
+            </connections>
+            <point key="canvasLocation" x="86.956521739130437" y="10.714285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
